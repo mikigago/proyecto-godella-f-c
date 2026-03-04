@@ -37,6 +37,7 @@ jobs:
           mkdir -p dist/src
           cp -R src/. dist/src/
           cp dist/home.html dist/index.html
+          find dist -maxdepth 1 -name "*.html" -type f -exec sed -i 's|\.\./src/|src/|g' {} +
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
