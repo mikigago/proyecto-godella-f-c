@@ -1,0 +1,419 @@
+.header {
+    width: 100%;
+    background: linear-gradient(90deg, #b31217 0%, #640101c6 100%);
+    padding: 14px 20px;
+    border: 2px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header_top,
+.header_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_top {
+    gap: 20px;
+}
+
+.header_bottom {
+    gap: 20px;
+}
+
+.header__logo img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    display: block;
+}
+
+.header_nav_central ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_nav_central {
+    margin-right: 0;
+}
+
+
+.header_nav__line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #ffffff82 0%, #640101c6 100%, #ffffff82 0%);
+}
+
+.header__nombre_club {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffffa6;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.header_nav_central a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.7px;
+
+    /*font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;*/
+}
+
+.header_partner_row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__partner_oficial {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffffa6;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.header__patrocinadores img {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+.header_botones {
+    display: flex;
+    gap: 10px;
+}
+
+.header_botones a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.7px;
+}
+
+/*Botones de la parte superior derecha*/
+
+.header_botones .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    width: 85px;
+}
+
+.header_botones .hazte_socio {
+    border: 2px solid #d68a2e;
+    background: transparent;
+}
+
+.header_botones .login {
+    border: 2px solid #d68a2e;
+    background: #d68a2e;
+}
+
+.body_imagen {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Estilos para el carrusel de imágenes*/
+
+.contenedor_carrusel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.carousel_slide {
+    flex: 0 0 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel_slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.carousel_hero {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    text-align: left;
+    padding: 18px 28px;
+    color: #ffffff;
+    background: rgba(70, 70, 70, 0.58);
+}
+
+.carousel_hero__left,
+.carousel_hero__right {
+    flex: 1;
+}
+
+.carousel_hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 6px;
+}
+
+.carrousel_hero_divisor {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.carousel_hero__title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    line-height: 0.95;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.carousel_hero__subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0.4px;
+    margin: 2px 0 0;
+    color: #ffffffde;
+}
+/*Efecto hover para la imagen del cuerpo*/
+.carousel_slide:hover img,
+.carousel_slide:focus-visible img {
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}
+
+/* De aqui para abajo van los estilos responsive */
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 12px 16px;
+        gap: 14px;
+    }
+
+    .header_nav_central ul {
+        gap: 12px;
+    }
+
+    .carousel_hero {
+        gap: 16px;
+        padding: 14px 18px;
+        bottom: 14px;
+    }
+
+    .carousel_hero__title {
+        font-size: 38px;
+    }
+
+    .carousel_hero__subtitle {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_top,
+    .header_bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header_nav_central ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 8px;
+    }
+
+    .header_partner_row {
+        justify-content: center;
+    }
+
+    .header_botones .btn {
+        width: auto;
+        padding: 0 14px;
+        min-height: 36px;
+    }
+
+    .carousel_hero {
+        bottom: 8px;
+        padding: 12px 14px;
+        gap: 12px;
+    }
+
+    .carousel_hero__left {
+        align-items: flex-start;
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .carousel_hero__right {
+        text-align: left;
+    }
+
+    .carousel_hero__title {
+        font-size: 24px;
+    }
+
+    .carousel_hero__subtitle {
+        font-size: 13px;
+    }
+
+    .carrousel_hero_divisor {
+        align-self: stretch;
+    }
+}
+
+/* Estilos para dispositivos muy pequeños (móviles pequeños) */
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 12px;
+    }
+
+    .header__nombre_club,
+    .header__partner_oficial {
+        font-size: 13px;
+    }
+
+    .header_nav_central ul {
+        gap: 10px;
+    }
+
+    .header_nav_central a,
+    .header_botones a {
+        letter-spacing: 0.5px;
+    }
+
+    .carousel_hero {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 10px 12px;
+        background: rgba(50, 50, 50, 0.74);
+    }
+
+    .carousel_hero__left,
+    .carousel_hero__right {
+        flex: 1;
+        text-align: left;
+    }
+
+    .carousel_hero__left {
+        align-items: flex-start;
+        padding-right: 0;
+    }
+
+    .carrousel_hero_divisor {
+        align-self: stretch;
+    }
+
+    .carousel_hero__title {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .carousel_hero__subtitle {
+        font-size: 12px;
+    }
+}
+
+
+/* Estilos para dispositivos extremadamente pequeños (móviles muy pequeños) como el IPhone SE  
+(este ultimo lo he incluido dado que es el minimo responsive que se aplica desde web)*/
+@media (max-width: 375px) and (max-height: 667px) {
+    .header {
+        padding: 8px 10px;
+        gap: 10px;
+    }
+
+    .header__logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .header_top,
+    .header_bottom {
+        gap: 8px;
+    }
+
+    .header_nav_central ul {
+        gap: 8px;
+        row-gap: 6px;
+    }
+
+    .header_nav_central a,
+    .header_botones a {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+    }
+
+    .header_botones {
+        gap: 8px;
+    }
+
+    .header_botones .btn {
+        min-height: 32px;
+        padding: 0 10px;
+    }
+
+    .carousel_hero {
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    .carousel_hero__title {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .carousel_hero__subtitle {
+        font-size: 11px;
+    }
+}
+
+/*montserrat*/
