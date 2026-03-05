@@ -70,6 +70,13 @@
 	letter-spacing: 0.7px;
 }
 
+.header_nav_central a[aria-current="page"] {
+	color: #ffee00;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+}
+
 .header_partner_row {
 	display: flex;
 	align-items: center;
@@ -117,6 +124,12 @@
 .header_botones .login {
 	border: 2px solid #d68a2e;
 	background: #d68a2e;
+}
+
+.header_botones .btn[aria-current="page"] {
+	color: #d68a2e;
+	border-color: #d68a2e;
+	background: #ffffff;
 }
 
 @media (max-width: 1024px) {
