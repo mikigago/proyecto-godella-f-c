@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+	window.requestAnimationFrame(() => {
+		document.body.classList.remove('home-enter');
+	});
+
 	const track = document.querySelector('.contenedor_carrusel');
 
 	if (!track) {
