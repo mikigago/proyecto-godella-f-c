@@ -330,6 +330,24 @@ body.home-enter {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 24px;
     letter-spacing: 1px;
+    margin: 0;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__logo a {
+    display: inline-flex;
+}
+
+.footer__logo img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    display: block;
 }
 
 .footer__nav {
