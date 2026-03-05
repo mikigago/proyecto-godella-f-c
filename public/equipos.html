@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campo | Godella C.F.</title>
+    <title>Equipos | Godella C.F.</title>
     <link rel="icon" type="image/png" href="../src/assets/img/logos/Escudo_Godella.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="../src/css/variables.css">
     <link rel="stylesheet" href="../src/css/base.css">
     <link rel="stylesheet" href="../src/css/components.css">
-    <link rel="stylesheet" href="../src/css/pages/campo.css">
-    <script src="../src/js/pages/campo.js" defer></script>
+    <link rel="stylesheet" href="../src/css/pages/equipos.css">
+    <script src="../src/js/pages/equipos.js" defer></script>
 </head>
 
 <body>
@@ -60,7 +60,30 @@
         </div>
     </header>
 
-    <h1>Bienvenido al campo (versión de prueba, comprobación de link)</h1>
+    <main class="equipos" aria-label="Categorías de equipos">
+        <h1 class="equipos__title">EQUIPOS POR CATEGORÍAS</h1>
+
+        <section class="equipos__grid">
+            <article class="categoria">
+                <h2 class="categoria__title">FÚTBOL 8</h2>
+                <ul class="categoria__list">
+                    <li>Querubín</li>
+                    <li>Prebenjamín</li>
+                    <li>Benjamín</li>
+                    <li>Alevín</li>
+                </ul>
+            </article>
+
+            <article class="categoria">
+                <h2 class="categoria__title">FÚTBOL 11</h2>
+                <ul class="categoria__list">
+                    <li>Infantil</li>
+                    <li>Cadete</li>
+                    <li>Juvenil</li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>

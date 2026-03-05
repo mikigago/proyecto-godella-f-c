@@ -1,0 +1,223 @@
+.header {
+	width: 100%;
+	background: linear-gradient(90deg, #b31217 0%, #640101c6 100%);
+	padding: 14px 20px;
+	border: 2px solid #e0e0e0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.header_content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.header_top,
+.header_bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header_top {
+	gap: 20px;
+}
+
+.header_bottom {
+	gap: 20px;
+}
+
+.header__logo img {
+	width: 56px;
+	height: 56px;
+	object-fit: contain;
+	display: block;
+}
+
+.header_nav_central ul {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header_nav_central {
+	margin-right: 0;
+}
+
+.header_nav__line {
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(90deg, #ffffff82 0%, #640101c6 100%, #ffffff82 0%);
+}
+
+.header__nombre_club {
+	font-family: 'Bebas Neue', sans-serif;
+	color: #ffffffa6;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+}
+
+.header_nav_central a {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'Bebas Neue', sans-serif;
+	letter-spacing: 0.7px;
+}
+
+.header_partner_row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.header__partner_oficial {
+	font-family: 'Bebas Neue', sans-serif;
+	color: #ffffffa6;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+}
+
+.header__patrocinadores img {
+	display: block;
+	height: 20px;
+	width: auto;
+}
+
+.header_botones {
+	display: flex;
+	gap: 10px;
+}
+
+.header_botones a {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'Bebas Neue', sans-serif;
+	letter-spacing: 0.7px;
+}
+
+.header_botones .btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 999px;
+	width: 85px;
+}
+
+.header_botones .hazte_socio {
+	border: 2px solid #d68a2e;
+	background: transparent;
+}
+
+.header_botones .login {
+	border: 2px solid #d68a2e;
+	background: #d68a2e;
+}
+
+@media (max-width: 1024px) {
+	.header {
+		padding: 12px 16px;
+		gap: 14px;
+	}
+
+	.header_nav_central ul {
+		gap: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.header__logo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header_top,
+	.header_bottom {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.header_nav_central ul {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 8px;
+	}
+
+	.header_partner_row {
+		justify-content: center;
+	}
+
+	.header_botones .btn {
+		width: auto;
+		padding: 0 14px;
+		min-height: 36px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		padding: 10px 12px;
+	}
+
+	.header__nombre_club,
+	.header__partner_oficial {
+		font-size: 13px;
+	}
+
+	.header_nav_central ul {
+		gap: 10px;
+	}
+
+	.header_nav_central a,
+	.header_botones a {
+		letter-spacing: 0.5px;
+	}
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+	.header {
+		padding: 8px 10px;
+		gap: 10px;
+	}
+
+	.header__logo img {
+		width: 48px;
+		height: 48px;
+	}
+
+	.header_top,
+	.header_bottom {
+		gap: 8px;
+	}
+
+	.header_nav_central ul {
+		gap: 8px;
+		row-gap: 6px;
+	}
+
+	.header_nav_central a,
+	.header_botones a {
+		font-size: 12px;
+		letter-spacing: 0.4px;
+	}
+
+	.header_botones {
+		gap: 8px;
+	}
+
+	.header_botones .btn {
+		min-height: 32px;
+		padding: 0 10px;
+	}
+}
